@@ -10,7 +10,11 @@ import {
 
 const skills = ["Excel", "Looker Studio", "Tableau", "Python", "SQL", "Pandas"];
 
-export default function Sidebar() {
+interface SidebarProps {
+  onContactClick: () => void;
+}
+
+export default function Sidebar({ onContactClick }: SidebarProps) {
   return (
     <aside className="sidebar">
       {/* Avatar */}
@@ -33,7 +37,7 @@ export default function Sidebar() {
       </p>
 
       {/* CTA */}
-      <button className="follow-btn">Follow / Contact</button>
+      <button className="follow-btn" onClick={onContactClick}>Follow / Contact</button>
 
       {/* Meta */}
       <ul className="sidebar-meta">
