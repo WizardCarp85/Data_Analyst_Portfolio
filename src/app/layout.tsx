@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Satyaki Das — Data Analyst Portfolio",
+  title: "Yashkumar Nimje — Data Analyst Portfolio",
   description:
     "Data Analyst turning complex datasets into clear, actionable intelligence. Explore projects in Excel, Tableau, Looker Studio, and Python.",
 };
