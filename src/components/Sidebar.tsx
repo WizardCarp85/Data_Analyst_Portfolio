@@ -1,0 +1,80 @@
+"use client";
+
+import Image from "next/image";
+import {
+  VscLocation,
+  VscMail,
+  VscDeviceMobile,
+  VscLink,
+} from "react-icons/vsc";
+
+const skills = ["Excel", "Looker Studio", "Tableau", "Python", "SQL", "Pandas"];
+
+export default function Sidebar() {
+  return (
+    <aside className="sidebar">
+      {/* Avatar */}
+      <div className="avatar-wrapper">
+        <Image
+          src="/profi.jpg"
+          alt="Profile picture"
+          width={260}
+          height={260}
+          className="avatar-img"
+          preload
+        />
+      </div>
+
+      {/* Identity */}
+      <h1 className="sidebar-name">Yashkumar Nimje</h1>
+      <p className="sidebar-username">yashkumar-data</p>
+      <p className="sidebar-bio">
+        Data Analyst transforming complex data into actionable insights. Skilled in building scalable models, dashboards, and data-driven solutions.
+      </p>
+
+      {/* CTA */}
+      <button className="follow-btn">Follow / Contact</button>
+
+      {/* Meta */}
+      <ul className="sidebar-meta">
+        <li>
+          <VscLocation className="meta-icon" />
+          <span>New Delhi, India</span>
+        </li>
+        <li>
+          <VscMail className="meta-icon" />
+          <a href="mailto:yashkumar.nimje2024@nst.rishihood.edu.in" className="meta-link">
+            yashkumar.nimje2024@nst.rishihood.edu.in
+          </a>
+        </li>
+        <li>
+          <VscDeviceMobile className="meta-icon" />
+          <a href="tel:+919579596554" className="meta-link">
+            +91 9579596554
+          </a>
+        </li>
+        <li>
+          <VscLink className="meta-icon" />
+          <a
+            href="https://www.linkedin.com/in/yashkumar-nimje-75a824323/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="meta-link"
+          >
+            linkedin.com/in/yashkumar-nimje/
+          </a>
+        </li>
+      </ul>
+
+      {/* Skills / Orgs */}
+      <div className="sidebar-section">
+        <h3 className="sidebar-section-title">Organizations</h3>
+        <div className="skill-chips">
+          {skills.map((s) => (
+            <span key={s} className="skill-chip">{s}</span>
+          ))}
+        </div>
+      </div>
+    </aside>
+  );
+}
