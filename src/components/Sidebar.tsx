@@ -7,6 +7,7 @@ import {
   VscDeviceMobile,
   VscLink,
 } from "react-icons/vsc";
+import { FiDownload } from "react-icons/fi";
 
 const skills = ["Excel", "Looker Studio", "Tableau", "Python", "SQL", "Pandas"];
 
@@ -37,7 +38,17 @@ export default function Sidebar({ onContactClick }: SidebarProps) {
       </p>
 
       {/* CTA */}
-      <button className="follow-btn" onClick={onContactClick}>Follow / Contact</button>
+      <div className="sidebar-cta-group">
+        <button className="follow-btn" onClick={onContactClick}>Follow / Contact</button>
+        <a
+          href="/Resume.pdf"
+          download="Yashkumar_Nimje_Resume.pdf"
+          className="resume-btn"
+        >
+          <FiDownload className="resume-btn-icon" />
+          Download Resume
+        </a>
+      </div>
 
       {/* Meta */}
       <ul className="sidebar-meta">

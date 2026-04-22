@@ -157,6 +157,12 @@ img { display: block; }
   line-height: 1.6;
 }
 
+.sidebar-cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .follow-btn {
   display: flex;
   align-items: center;
@@ -174,6 +180,35 @@ img { display: block; }
 .follow-btn:hover {
   background: var(--bg-tertiary);
   border-color: var(--accent-blue);
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  padding: 7px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(63,185,80,.4);
+  background: rgba(63,185,80,.08);
+  color: var(--accent-green);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition), transform .1s;
+}
+.resume-btn:hover {
+  background: rgba(63,185,80,.18);
+  border-color: var(--accent-green);
+  transform: translateY(-1px);
+}
+.resume-btn-icon {
+  font-size: 14px;
+  transition: transform .2s ease;
+}
+.resume-btn:hover .resume-btn-icon {
+  transform: translateY(2px);
 }
 
 .sidebar-meta {
