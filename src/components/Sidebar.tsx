@@ -63,12 +63,6 @@ export default function Sidebar({ onContactClick }: SidebarProps) {
           </a>
         </li>
         <li>
-          <VscDeviceMobile className="meta-icon" />
-          <a href="tel:+919579596554" className="meta-link">
-            +91 9579596554
-          </a>
-        </li>
-        <li>
           <VscLink className="meta-icon" />
           <a
             href="https://www.linkedin.com/in/yashkumar-nimje-75a824323/"
