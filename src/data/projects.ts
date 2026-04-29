@@ -24,7 +24,7 @@ export const projects: Project[] = [
     tags: ["tableau", "data-visualization", "sales-analysis", "dashboard"],
     tool: "Tableau",
     visibility: "Public",
-    githubUrl: "#",
+    githubUrl: "https://github.com/mansingh-04/SectionB_G-17_ChocolateSalesDataset",
   }
 ];
 // ─────────────────────────────────────────────────────────────────────────────
