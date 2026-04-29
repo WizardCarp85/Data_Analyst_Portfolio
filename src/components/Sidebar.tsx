@@ -41,7 +41,7 @@ export default function Sidebar({ onContactClick }: SidebarProps) {
       <div className="sidebar-cta-group">
         <button className="follow-btn" onClick={onContactClick}>Follow / Contact</button>
         <a
-          href="/Resume.pdf"
+          href="https://drive.google.com/file/d/1Gy874rkDhLWFW9zLQdZWSYQXmpauasN1/view?usp=drive_link"
           download="Yashkumar_Nimje_Resume.pdf"
           className="resume-btn"
         >
